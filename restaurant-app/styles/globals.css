@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #faf7f2;
+  color: #2b2118;
+}
+a { color: inherit; text-decoration: none; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: #2b2118;
+  color: #fff;
+}
+.navbar .brand { font-size: 22px; font-weight: bold; color: #e8b84b; }
+.navbar nav a { margin-left: 20px; color: #fff; }
+.navbar nav a:hover { color: #e8b84b; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') center/cover;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 { font-size: 42px; margin-bottom: 12px; }
+.hero p { font-size: 18px; }
+
+.btn {
+  display: inline-block;
+  background: #e8b84b;
+  color: #2b2118;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 16px;
+}
+.btn:hover { opacity: 0.9; }
+.btn.secondary { background: transparent; border: 1px solid #2b2118; color: #2b2118; }
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.menu-item h3 { margin: 0 0 8px; }
+.menu-item .price { color: #b5442f; font-weight: bold; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 12px; }
+.badge.pending { background: #ffe9b0; }
+.badge.confirmed { background: #c9f0c9; }
+.badge.cancelled { background: #f0c9c9; }
+
+form { display: flex; flex-direction: column; gap: 12px; max-width: 420px; }
+input, textarea, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.error { color: #b5442f; font-size: 14px; }
+.success { color: #2c7a2c; font-size: 14px; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eee; font-size: 14px; }
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #7a7266;
+  font-size: 14px;
+}
